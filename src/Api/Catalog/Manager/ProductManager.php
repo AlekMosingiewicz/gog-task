@@ -26,33 +26,33 @@ class ProductManager implements ProductManagerInterface
      */
     private $productModelFactory;
 
-    public function createProduct(ProductDto $product): void
+    public function createProduct(ProductDto $productDto): void
     {
-        $this->productDataValidator->validateProductData($product);
-        $model = $this->productModelFactory->createProductModel($product);
+        $this->productDataValidator->validateProductData($productDto);
+        $model = $this->productModelFactory->createProductModel($productDto);
         $this->productRepository->save($model);
 
     }
 
-    public function updateProduct(ProductDto $product): void
+    public function updateProduct(ProductDto $productDto): void
     {
-        $this->productDataValidator->validateProductData($product);
+        $this->productDataValidator->validateProductData($productDto);
 
-        $model = $this->productRepository->findById($product->getId());
+        $model = $this->productRepository->findById($productDto->getId());
 
         if (!$model instanceof ProductModelInterface) {
             throw new ProductNotFoundException();
         }
 
-        $model->setPrice($product->getPrice());
-        $model->setName($product->getName());
+        $model->setPrice($productDto->getPrice());
+        $model->setName($productDto->getName());
 
         $this->productRepository->save($model);
     }
 
-    public function deleteProduct(ProductDto $product): void
+    public function deleteProduct(ProductDto $productDto): void
     {
-        $model = $this->productRepository->findById($product->getId());
+        $model = $this->productRepository->findById($productDto->getId());
 
         if (!$model instanceof ProductModelInterface) {
             throw new ProductNotFoundException();

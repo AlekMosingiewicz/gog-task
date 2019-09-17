@@ -11,17 +11,17 @@ use Alek\GOG\Api\Catalog\Dto\ProductDto;
 interface ProductManagerInterface
 {
     /**
-     * @param ProductDto $product
+     * @param ProductDto $productDto
      */
-    public function createProduct(ProductDto $product): void;
+    public function createProduct(ProductDto $productDto): void;
 
     /**
-     * @param ProductDto $product
+     * @param ProductDto $productDto
      */
-    public function updateProduct(ProductDto $product): void;
+    public function updateProduct(ProductDto $productDto): void;
 
     /**
-     * @param ProductDto $product
+     * @param ProductDto $productDto
      */
-    public function deleteProduct(ProductDto $product): void;
+    public function deleteProduct(ProductDto $productDto): void;
 }
