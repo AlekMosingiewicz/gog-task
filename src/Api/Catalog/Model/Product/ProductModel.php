@@ -1,13 +1,12 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Dto;
+namespace Alek\GOG\Api\Catalog\Model\Product;
 
 /**
- * Class GameDto
- * DTO for transferring game data
- * @package Alek\GOG\Api\Catalog\Dto
+ * Class ProductModel
+ * @package Alek\GOG\Api\Catalog\Model\Product
  */
-class GameDto
+class ProductModel implements ProductModelInterface
 {
     /**
      * @var int
@@ -20,7 +19,7 @@ class GameDto
     private $name;
 
     /**
-     * @var double
+     * @var float
      */
     private $price;
 
@@ -71,5 +70,6 @@ class GameDto
     {
         $this->price = $price;
     }
+
 
 }
