@@ -1,0 +1,9 @@
+version: "2.0"
+
+services:
+  php:
+    image: webdevops/php-apache
+    volumes:
+      - .:/var/www/html:cached
+    ports:
+       - "80:80"
