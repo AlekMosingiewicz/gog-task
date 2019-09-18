@@ -1,11 +1,11 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Model\Product;
+namespace App\Api\Catalog\Model\Product;
 
 /**
  * Interface ProductModelInterface
  * Encapsulates entity stored in the repository
- * @package Alek\GOG\Api\Catalog\Model\Product
+ * @package App\Api\Catalog\Model\Product
  */
 interface ProductModelInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Exception;
+namespace App\Api\Catalog\Exception;
 
 abstract class ApiException extends \Exception
 {

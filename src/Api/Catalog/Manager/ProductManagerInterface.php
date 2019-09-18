@@ -1,12 +1,12 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Manager;
+namespace App\Api\Catalog\Manager;
 
-use Alek\GOG\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Dto\ProductDto;
 
 /**
  * Interface ProductManagerInterface
- * @package Alek\GOG\Api\Catalog\Manager
+ * @package App\Api\Catalog\Manager
  */
 interface ProductManagerInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Model\Product;
+namespace App\Api\Catalog\Model\Product;
 
 /**
  * Class ProductModel
- * @package Alek\GOG\Api\Catalog\Model\Product
+ * @package App\Api\Catalog\Model\Product
  */
 class ProductModel implements ProductModelInterface
 {

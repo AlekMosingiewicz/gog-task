@@ -1,13 +1,13 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Manager;
+namespace App\Api\Catalog\Manager;
 
-use Alek\GOG\Api\Catalog\Dto\ProductDto;
-use Alek\GOG\Api\Catalog\Exception\ProductNotFoundException;
-use Alek\GOG\Api\Catalog\Factory\Model\ProductModelFactoryInterface;
-use Alek\GOG\Api\Catalog\Model\Product\ProductModelInterface;
-use Alek\GOG\Api\Catalog\Repository\ProductRepositoryInterface;
-use Alek\GOG\Api\Catalog\Validation\ProductDataValidatorInterface;
+use App\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Exception\ProductNotFoundException;
+use App\Api\Catalog\Factory\Model\ProductModelFactoryInterface;
+use App\Api\Catalog\Model\Product\ProductModelInterface;
+use App\Api\Catalog\Repository\ProductRepositoryInterface;
+use App\Api\Catalog\Validation\ProductDataValidatorInterface;
 
 class ProductManager implements ProductManagerInterface
 {

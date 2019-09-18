@@ -11,6 +11,9 @@
     "nikic/php-parser": {
         "version": "v4.2.4"
     },
+    "phake/phake": {
+        "version": "v3.1.6"
+    },
     "phar-io/manifest": {
         "version": "1.0.3"
     },

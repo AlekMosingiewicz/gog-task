@@ -1,10 +1,10 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Dto;
+namespace App\Api\Catalog\Dto;
 
 /**
  * Interface ProductDtoInterface
- * @package Alek\GOG\Api\Catalog\Dto
+ * @package App\Api\Catalog\Dto
  */
 interface ProductDtoInterface
 {

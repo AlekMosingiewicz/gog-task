@@ -1,15 +1,15 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Repository;
+namespace App\Api\Catalog\Repository;
 
 
-use Alek\GOG\Api\Catalog\Dto\ProductDto;
-use Alek\GOG\Api\Catalog\Exception\ProductNotFoundException;
-use Alek\GOG\Api\Catalog\Model\Product\ProductModelInterface;
+use App\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Exception\ProductNotFoundException;
+use App\Api\Catalog\Model\Product\ProductModelInterface;
 
 /**
  * Interface ProductRepositoryInterface
- * @package Alek\GOG\Api\Catalog\Repository
+ * @package App\Api\Catalog\Repository
  */
 interface ProductRepositoryInterface
 {

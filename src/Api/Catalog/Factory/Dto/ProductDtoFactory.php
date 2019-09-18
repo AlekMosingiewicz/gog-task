@@ -1,9 +1,9 @@
 <?php
 
-namespace Alek\GOG\Api\Catalog\Factory\Dto;
+namespace App\Api\Catalog\Factory\Dto;
 
-use Alek\GOG\Api\Catalog\Dto\ProductDto;
-use Alek\GOG\Api\Catalog\Dto\ProductDtoInterface;
+use App\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Dto\ProductDtoInterface;
 
 class ProductDtoFactory implements ProductDtoFactoryInterface
 {
