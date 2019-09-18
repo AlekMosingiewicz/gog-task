@@ -7,7 +7,7 @@ use App\Api\Catalog\Dto\ProductDtoInterface;
 
 class ProductDtoFactory implements ProductDtoFactoryInterface
 {
-    public function createProductDto(string $name, double $price, int $id = 0): ProductDtoInterface
+    public function createProductDto(string $name, float $price, int $id = 0): ProductDtoInterface
     {
         $productDto = new ProductDto();
 

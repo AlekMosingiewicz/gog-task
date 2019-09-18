@@ -2,7 +2,7 @@
 
 namespace App\Api\Catalog\Manager;
 
-use App\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Dto\ProductDtoInterface;
 
 /**
  * Interface ProductManagerInterface
@@ -11,17 +11,17 @@ use App\Api\Catalog\Dto\ProductDto;
 interface ProductManagerInterface
 {
     /**
-     * @param ProductDto $productDto
+     * @param ProductDtoInterface $productDto
      */
-    public function createProduct(ProductDto $productDto): void;
+    public function createProduct(ProductDtoInterface $productDto): void;
 
     /**
-     * @param ProductDto $productDto
+     * @param ProductDtoInterface $productDto
      */
-    public function updateProduct(ProductDto $productDto): void;
+    public function updateProduct(ProductDtoInterface $productDto): void;
 
     /**
-     * @param ProductDto $productDto
+     * @param ProductDtoInterface $productDto
      */
-    public function deleteProduct(ProductDto $productDto): void;
+    public function deleteProduct(ProductDtoInterface $productDto): void;
 }

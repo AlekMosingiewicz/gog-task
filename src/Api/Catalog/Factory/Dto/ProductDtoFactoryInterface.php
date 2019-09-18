@@ -12,9 +12,9 @@ interface ProductDtoFactoryInterface
 {
     /**
      * @param string $name
-     * @param double $price
+     * @param float $price
      * @param int $id
      * @return ProductDtoInterface
      */
-    public function createProductDto(string $name, double $price, int $id = 0): ProductDtoInterface;
+    public function createProductDto(string $name, float $price, int $id = 0): ProductDtoInterface;
 }

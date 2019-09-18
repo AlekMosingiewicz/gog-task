@@ -15,6 +15,15 @@ class ProductDataValidator implements ProductDataValidatorInterface
     private $productRepository;
 
     /**
+     * ProductDataValidator constructor.
+     * @param ProductRepositoryInterface $productRepository
+     */
+    public function __construct(ProductRepositoryInterface $productRepository)
+    {
+        $this->productRepository = $productRepository;
+    }
+
+    /**
      * {@inheritDoc}
      */
     public function validateProductData(ProductDtoInterface $productDto): void

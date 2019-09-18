@@ -3,6 +3,7 @@
 namespace App\Api\Catalog\Manager;
 
 use App\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Dto\ProductDtoInterface;
 use App\Api\Catalog\Exception\ProductNotFoundException;
 use App\Api\Catalog\Factory\Model\ProductModelFactoryInterface;
 use App\Api\Catalog\Model\Product\ProductModelInterface;
@@ -26,7 +27,21 @@ class ProductManager implements ProductManagerInterface
      */
     private $productModelFactory;
 
-    public function createProduct(ProductDto $productDto): void
+    /**
+     * ProductManager constructor.
+     * @param ProductDataValidatorInterface $productDataValidator
+     * @param ProductRepositoryInterface $productRepository
+     * @param ProductModelFactoryInterface $productModelFactory
+     */
+    public function __construct(ProductDataValidatorInterface $productDataValidator, ProductRepositoryInterface $productRepository, ProductModelFactoryInterface $productModelFactory)
+    {
+        $this->productDataValidator = $productDataValidator;
+        $this->productRepository = $productRepository;
+        $this->productModelFactory = $productModelFactory;
+    }
+
+
+    public function createProduct(ProductDtoInterface $productDto): void
     {
         $this->productDataValidator->validateProductData($productDto);
         $model = $this->productModelFactory->createProductModel($productDto);
@@ -34,7 +49,7 @@ class ProductManager implements ProductManagerInterface
 
     }
 
-    public function updateProduct(ProductDto $productDto): void
+    public function updateProduct(ProductDtoInterface $productDto): void
     {
         $this->productDataValidator->validateProductData($productDto);
 
@@ -50,7 +65,7 @@ class ProductManager implements ProductManagerInterface
         $this->productRepository->save($model);
     }
 
-    public function deleteProduct(ProductDto $productDto): void
+    public function deleteProduct(ProductDtoInterface $productDto): void
     {
         $model = $this->productRepository->findById($productDto->getId());
 
