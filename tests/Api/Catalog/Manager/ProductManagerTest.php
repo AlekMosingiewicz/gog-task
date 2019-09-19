@@ -2,7 +2,7 @@
 
 namespace App\Tests\Api\Catalog\Manager;
 
-use App\Api\Catalog\Dto\ProductDtoInterface;
+use App\Api\Catalog\Dto\Product\ProductDtoInterface;
 use App\Api\Catalog\Factory\Model\ProductModelFactoryInterface;
 use App\Api\Catalog\Manager\ProductManager;
 use App\Api\Catalog\Model\Product\ProductModelInterface;

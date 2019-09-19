@@ -26,5 +26,13 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
+doctrine:
+    dbal:
+        dbname:               gogapi
+        host:                 db
+        port:                 3306
+        user:                 gogapi
+        password:             gogpassword
+        driver:               pdo_mysql
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Api\Catalog\Dto;
+namespace App\Api\Catalog\Dto\Product;
 
 /**
  * Class GameDto
  * DTO for transferring game data
- * @package App\Api\Catalog\Dto
+ * @package App\Api\Catalog\Dto\Product
  */
 class ProductDto implements ProductDtoInterface
 {
@@ -35,9 +35,10 @@ class ProductDto implements ProductDtoInterface
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(int $id): ProductDtoInterface
     {
         $this->id = $id;
+        return $this;
     }
 
     /**
@@ -51,9 +52,10 @@ class ProductDto implements ProductDtoInterface
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(string $name): ProductDtoInterface
     {
         $this->name = $name;
+        return $this;
     }
 
     /**
@@ -67,9 +69,10 @@ class ProductDto implements ProductDtoInterface
     /**
      * @param double $price
      */
-    public function setPrice(float $price): void
+    public function setPrice(float $price): ProductDtoInterface
     {
         $this->price = $price;
+        return $this;
     }
 
 }

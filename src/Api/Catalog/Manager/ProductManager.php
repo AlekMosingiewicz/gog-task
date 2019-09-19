@@ -2,8 +2,8 @@
 
 namespace App\Api\Catalog\Manager;
 
-use App\Api\Catalog\Dto\ProductDto;
-use App\Api\Catalog\Dto\ProductDtoInterface;
+use App\Api\Catalog\Dto\Product\ProductDto;
+use App\Api\Catalog\Dto\Product\ProductDtoInterface;
 use App\Api\Catalog\Exception\ProductNotFoundException;
 use App\Api\Catalog\Factory\Model\ProductModelFactoryInterface;
 use App\Api\Catalog\Model\Product\ProductModelInterface;

@@ -16,8 +16,9 @@ interface ProductModelInterface
 
     /**
      * @param int $id
+     * @return ProductModelInterface
      */
-    public function setId(int $id): void;
+    public function setId(int $id): ProductModelInterface;
 
     /**
      * @return string
@@ -26,8 +27,9 @@ interface ProductModelInterface
 
     /**
      * @param string $name
+     * @return ProductModelInterface
      */
-    public function setName(string $name): void;
+    public function setName(string $name): ProductModelInterface;
 
     /**
      * @return float
@@ -36,7 +38,8 @@ interface ProductModelInterface
 
     /**
      * @param float $price
+     * @return ProductModelInterface
      */
-    public function setPrice(float $price): void;
+    public function setPrice(float $price): ProductModelInterface;
 
 }

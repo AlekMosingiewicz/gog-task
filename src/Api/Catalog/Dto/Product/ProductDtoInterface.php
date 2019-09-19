@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Api\Catalog\Dto;
+namespace App\Api\Catalog\Dto\Product;
 
 /**
  * Interface ProductDtoInterface
- * @package App\Api\Catalog\Dto
+ * @package App\Api\Catalog\Dto\Product
  */
 interface ProductDtoInterface
 {
@@ -16,7 +16,7 @@ interface ProductDtoInterface
     /**
      * @param int $id
      */
-    public function setId(int $id): void;
+    public function setId(int $id): ProductDtoInterface;
 
     /**
      * @return string
@@ -26,7 +26,7 @@ interface ProductDtoInterface
     /**
      * @param string $name
      */
-    public function setName(string $name): void;
+    public function setName(string $name): ProductDtoInterface;
 
     /**
      * @return float
@@ -36,5 +36,5 @@ interface ProductDtoInterface
     /**
      * @param float $price
      */
-    public function setPrice(float $price): void;
+    public function setPrice(float $price): ProductDtoInterface;
 }

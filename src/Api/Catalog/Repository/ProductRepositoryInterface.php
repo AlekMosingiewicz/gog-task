@@ -3,7 +3,7 @@
 namespace App\Api\Catalog\Repository;
 
 
-use App\Api\Catalog\Dto\ProductDto;
+use App\Api\Catalog\Dto\Product\ProductDto;
 use App\Api\Catalog\Exception\ProductNotFoundException;
 use App\Api\Catalog\Model\Product\ProductModelInterface;
 
@@ -17,7 +17,7 @@ interface ProductRepositoryInterface
      * List all products
      * @return ProductModelInterface[]
      */
-    public function listAllProducts(): array;
+    public function findAll(): array;
 
     /**
      * Save a product

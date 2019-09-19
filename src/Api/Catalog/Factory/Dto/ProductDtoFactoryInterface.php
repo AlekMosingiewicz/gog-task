@@ -2,7 +2,7 @@
 
 namespace App\Api\Catalog\Factory\Dto;
 
-use App\Api\Catalog\Dto\ProductDtoInterface;
+use App\Api\Catalog\Dto\Product\ProductDtoInterface;
 
 /**
  * Interface ProductDtoFactoryInterface

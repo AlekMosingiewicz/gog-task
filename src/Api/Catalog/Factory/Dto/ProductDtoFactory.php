@@ -2,8 +2,8 @@
 
 namespace App\Api\Catalog\Factory\Dto;
 
-use App\Api\Catalog\Dto\ProductDto;
-use App\Api\Catalog\Dto\ProductDtoInterface;
+use App\Api\Catalog\Dto\Product\ProductDto;
+use App\Api\Catalog\Dto\Product\ProductDtoInterface;
 
 class ProductDtoFactory implements ProductDtoFactoryInterface
 {
@@ -11,9 +11,9 @@ class ProductDtoFactory implements ProductDtoFactoryInterface
     {
         $productDto = new ProductDto();
 
-        $productDto->setName($name);
-        $productDto->setPrice($price);
-        $productDto->setId($id);
+        $productDto->setName($name)
+                   ->setPrice($price)
+                   ->setId($id);
 
         return $productDto;
     }

@@ -2,7 +2,7 @@
 
 namespace App\Api\Catalog\Validation;
 
-use App\Api\Catalog\Dto\ProductDtoInterface;
+use App\Api\Catalog\Dto\Product\ProductDtoInterface;
 use App\Api\Catalog\Exception\InvalidDataException;
 use App\Api\Catalog\Model\Product\ProductModelInterface;
 use App\Api\Catalog\Repository\ProductRepositoryInterface;
